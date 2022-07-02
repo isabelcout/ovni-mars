@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(imagens/galaxy.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.marte {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FF4500 url(imagens/mars.png);
+    box-shadow: 0 0 15px rgba(249, 76, 8, 0.5),
+                    0 0 30px rgba(249, 76, 8, 0.5),
+				    0 0 45px rgba(249, 76, 8, 0.5),
+				    0 0 60px rgba(249, 76, 8, 0.5),
+				    0 0 10px rgba(249, 76, 8, 0.5);
+
+
+}
+
+.ovni {
+    top: -50%;
+    left: -60%;
+    position: absolute;
+    transform-origin: 200px 200px;
+
+    animation: ovni 10s linear infinite;
+}
+
+.ovni img {
+    width: 85px;
+    height: 85px;
+}
+
+@keyframes ovni {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
